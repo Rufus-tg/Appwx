@@ -1,0 +1,12 @@
+<view class="pyg_index">
+<searchinput></searchinput>
+<view class="index_swiper">
+<swiper autoplay indicator-dots circular>
+<swiper-item wx:for="{{swiperlist}}" wx:key="good_id">
+<navigator>
+<image mode="widthFix" src="{{item.image_src}}"></image>
+</navigator>
+</swiper-item>
+</swiper>
+</view>
+</view>

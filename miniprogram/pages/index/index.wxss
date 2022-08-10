@@ -1,0 +1,7 @@
+.index_swiper image{
+  width: 100%;
+}
+
+swiper{
+  width:750rpx;
+}
