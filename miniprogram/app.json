@@ -1,60 +1,54 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/category/category",
-    "pages/goods_list/goods_list",
-    "pages/goos_detail/goos_detail",
-    "pages/cart/cart",
-    "pages/collect/collect",
-    "pages/order/order",
-    "pages/search/search",
-    "pages/user/user",
-    "pages/feedback/feedback",
-    "pages/login/login",
-    "pages/auth/auth",
-    "pages/pay/pay"
-
-
-  
+    "pages/category/index",
+    "pages/goods_list/index",
+    "pages/goods_detail/index",
+    "pages/cart/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/search/index",
+    "pages/user/index",
+    "pages/pay/index",
+    "pages/cart/cart"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "优购商城",
+    "navigationBarBackgroundColor": "#FD6F06",
+    "navigationBarTitleText": "优购",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color": "#9e9e9e",
-    "selectedColor": "#2B223B",
-    "backgroundColor": "",
-    "position": "bottom",
-    "borderStyle": "black",
-    "list":[
+    "color": "#999",
+    "selectedColor": "#ff2d4a",
+    "backgroundColor": "#fafafa",
+    "list": [
       {
-        "pagePath":"pages/index/index",
+        "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "icons/首页.png",
-        "selectedIconPath": "icons/首页-fill.png"
-      },{
-        "pagePath":"pages/category/category",
+        "iconPath": "icons/home.png",
+        "selectedIconPath": "icons/home-o.png"
+      },
+      {
+        "pagePath": "pages/category/index",
         "text": "分类",
-        "iconPath": "icons/icon_应用管理.png",
-        "selectedIconPath": "icons/应用.png"
-      },{
-        "pagePath":"pages/cart/cart",
+        "iconPath": "icons/category.png",
+        "selectedIconPath": "icons/category-o.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
         "text": "购物车",
-        "iconPath": "icons/购物车.png",
-      "selectedIconPath": "icons/3.1购物车-选中.png"
-      },{
-        "pagePath":"pages/user/user",
+        "iconPath": "icons/cart.png",
+        "selectedIconPath": "icons/cart-o.png"
+      },
+      {
+        "pagePath": "pages/user/index",
         "text": "我的",
-        "iconPath": "icons/224用户-线性.png",
-      "selectedIconPath": "icons/224用户.png"
+        "iconPath": "icons/my.png",
+        "selectedIconPath": "icons/my-o.png"
       }
     ]
-
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
 }
