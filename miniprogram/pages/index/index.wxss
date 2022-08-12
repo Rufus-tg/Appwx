@@ -5,3 +5,14 @@
 swiper{
   width:750rpx;
 }
+.index_nav{
+  display: flex;
+}
+.index_nav image{
+  
+  width: 100%;
+}
+.index_nav navigator{
+flex: 1;
+padding: 20rpx;
+}

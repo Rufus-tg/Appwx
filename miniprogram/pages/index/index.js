@@ -1,3 +1,4 @@
+import {request} from "../../request/index.js"
 Page({
 
   /**
@@ -5,18 +6,31 @@ Page({
    */
   data: {
     //轮播图数组
-    swiperlist:[]
+    swiperlist:[],
+    navimglist:[],
+    floorlistlist:[]
   },
 onLoad:function(options){
- wx.request({
-   url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata',
-   method:'GET',
-   success: (result) => {
-     console.log(result)
-     this.setData({swiperlist:result.data.message})
-   }
+  this.getswiperlist();
+  this.getnavimglist();
+  this.getfloorlist();
   //  fail: (res) => {},请求成功时触发
   //  complete: (res) => {},无论请求失败还是成都会触发 }
+},getswiperlist(){
+  request({ url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata'}).then(result=>{
+    this.setData({swiperlist:result.data.message})
+    // console.log(this.data.swiperlist)
+  
+ })
+},getnavimglist(){
+  request({ url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/catitems'}).then(result=>{
+    this.setData({navimglist:result.data.message})
+    // console.log(this.data.navimglist)
+ })
+},getfloorlist(){
+  request({ url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/floordata'}).then(result=>{
+    this.setData({floorlistlist:result.data.message})
+    console.log(this.data.floorlistlist)
  })
 },
   /**
